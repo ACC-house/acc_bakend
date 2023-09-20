@@ -24,8 +24,8 @@ public class BudgetService {
         return budgetModelsRepository.findById(id);
     }
 
-    public BudgetModels saveBudget(BudgetModels accHouse) {
-        return budgetModelsRepository.save(accHouse);
+    public BudgetModels saveBudget(BudgetModels budget) {
+        return budgetModelsRepository.save(budget);
     }
 
     public void deleteBudget(Long id) {

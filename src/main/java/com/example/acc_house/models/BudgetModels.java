@@ -17,28 +17,19 @@ public class BudgetModels {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "name", nullable = false)
     private String name;
-    @Column(name = "email", nullable = false)
+
     private String email;
-    @Column(name = "phone", nullable = false)
+
     private Long phone;
-    @Column(name = "work", nullable = false)
+
     private String work;
-    @Column(name = "metros,", nullable = false)
-    private Long metros;
-    @Column(name = "budget_price", nullable = false)
+
+    private Long meters;
+
     private Long budget_price;
 
-    public void BudgetModels() {
+    public BudgetModels() {
     }
 
-    public void BudgetModels(String name, String email, Long phone, String work, Long metros, Long budget_price) {
-        this.name = name;
-        this.email = email;
-        this.phone = phone;
-        this.work = work;
-        this.metros = metros;
-        this.budget_price = budget_price;
-    }
 }

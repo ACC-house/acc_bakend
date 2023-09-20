@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/acc_house")
+@CrossOrigin(origins = "*")
 public class AccHouseController {
     @Autowired
      private AccHouseService accHouseService;
